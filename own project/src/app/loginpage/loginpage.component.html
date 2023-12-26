@@ -1,0 +1,36 @@
+<section class="sample-app-content">
+    <h1>REGISTRATION FORM</h1>
+    <hr>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>
+            <label> Name </label>
+            <input type="text" formControlName="firstName">
+        </p>
+        
+        <p>
+            <label>Email</label>
+            <input type="email" formControlName="emailId">
+        </p>
+        <p>
+            <label>PASSWORD</label>
+            <input type="password" formControlName="password"require="">
+            <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+        </p>
+        <p>
+        <label>CONFIRM PASSWORD</label>
+        <input type="password" formControlName="Confirm password">
+    </p>
+  
+       
+    </form>
+    <hr>
+    <p>
+            
+        <!-- <button type="submit" [disabled]="!form.valid">Submit</button> -->
+        <button type="submit"(click)="login()"><strong>Submit</strong></button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button" (click)="forget()"><strong>Forgot Me?</strong></button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button" (click)="signUp()"><strong>Sign up</strong></button>
+    </p>
+</section>

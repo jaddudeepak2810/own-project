@@ -1,0 +1,79 @@
+
+/* Style for the sample-app-content section */
+.sample-app-content {
+    
+    background-color : #8D63FF;
+    color :#ccc;    max-width: 450px; max-height: 450vh;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(90deg, #C7C5F4, #776BCC);	
+}
+
+/* Style for the form within the sample-app-content section */
+ form {
+    display: relative;
+    flex-direction: column;
+}
+
+/* Style for the labels within the form */
+ label {
+    display: block;
+    font-size: 20PX;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+
+ h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        -webkit-text-fill-color: aliceblue;
+        font-size: 35px;
+    
+
+    
+}
+
+/* Style for the input fields within the form */
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Style for the buttons within the form */
+ button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+   
+    color: #FFFFFF;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+/* Style for the Angular directives section */
+div[ng-app] {
+    margin-top: 20px;
+}
+
+/* Style for the paragraph within the Angular directives section */
+div[ng-app] p {
+    margin-bottom: 10px;
+}

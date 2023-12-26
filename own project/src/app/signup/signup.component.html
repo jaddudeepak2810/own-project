@@ -1,0 +1,37 @@
+<section class="sample-app-content">
+    <h1>SIGN UP</h1>
+    <hr>
+    <div class="logo">
+        <img src=""alt="">
+    </div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>
+            <label>FIRST NAME</label>
+            <input type="text" formControlName="firstName">
+        </p>
+        <p>
+            <label>LAST NAME</label>
+            <input type="text" formControlName="lastName">
+        </p>
+        <p>
+            <label>EMAIL</label>
+            <input type="email" formControlName="emailid">
+        </p>
+        <p>
+            <label>PASSWORD</label>
+            <input type="password" formControlName="password">
+        </p>
+        <hr>
+        <p>
+            
+            <button (click)="signUp()"><strong>Sign Up</strong></button>
+            
+        </p>
+        <p>
+            
+            <button (click)="backTo()"><strong>back</strong></button>
+            
+        </p>
+        
+    </form>
+</section>
