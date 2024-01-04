@@ -3,9 +3,9 @@
 .sample-app-content {
     
     background-color : #8D63FF;
-    color :#ccc;    max-width: 450px; max-height: 450vh;
+    color :#ccc;    max-width: 500px; max-height: 450vh;
         margin: auto;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -48,17 +48,18 @@ input {
 }
 
 
-/* Style for the buttons within the form */
- button {
-    position: relative;
+button {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
+    gap: 10px;
     background-color: #04AA6D;
     border: none;
    
     color: #FFFFFF;
-    padding: 15px;
-    width: 120px;
+   
+    width: 30%;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     align-items: center;
     font-size: 15px;
     border: 1px solid #ccc;
@@ -68,6 +69,11 @@ input {
 }
 
 
+/* Style for the Angular directives section */
+
+button:hover {
+    background-color: #45a049;
+}
 /* Style for the Angular directives section */
 div[ng-app] {
     margin-top: 20px;

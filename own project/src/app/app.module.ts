@@ -7,13 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule } from '@angular/common/http';
-import { ForgetComponent } from './forget/forget.component';
+
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginpageComponent,
     SignupComponent,
-    ForgetComponent
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
