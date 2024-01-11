@@ -1,0 +1,21 @@
+footer {
+    display: flexbox;
+    background-color: #000;
+    color: #fff;
+    padding: 64px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+  }
+  
+  footer i {
+    margin-right: 5px;
+  }
+  
+  footer a:hover {
+    color: #f00;
+  }

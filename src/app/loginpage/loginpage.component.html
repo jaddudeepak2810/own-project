@@ -1,0 +1,40 @@
+<div class="background-container">
+<section class="sample-app-content">
+    <h1>LOGIN</h1>
+    <hr>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>
+            <label> Name </label>
+            <input type="text" formControlName="firstName"placeholder="Enter Your Name"required>
+        </p>
+        
+        <p>
+            <label>Email</label>
+            <input type="email" formControlName="emailId"placeholder="Enter Your Email ID"required>
+        </p>
+        <label>PASSWORD</label>
+        <p class="b4">
+        <input [type]="show ? 'text' : 'password'"placeholder="Password"required />
+        
+        <button (click)="password()"name="b4">{{show ? 'Show' : 'Hide'}}</button>
+        </p>
+   
+        <p>
+        <label>CONFIRM PASSWORD</label>
+        <input type="text" formControlName="Confirm password"placeholder="Confirm Password"required>
+    </p>
+  
+       
+    </form>
+    <hr>
+    <p>
+            
+        <!-- <button type="submit" [disabled]="!form.valid">Submit</button> -->
+        <button type="submit"name="b1"(click)="login()"><strong>Submit</strong></button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button" name="b2"(click)="forget()"><strong>Forgot Me?</strong></button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button"name="b3" (click)="signUp()"><strong>Sign up</strong></button>
+    </p>
+</section>
+</div>

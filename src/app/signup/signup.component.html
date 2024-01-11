@@ -1,0 +1,49 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><div class="background-container">
+    
+
+<section class="sample-app-content">
+    <h1>SIGN UP</h1>
+   <hr>
+    <div class="logo">
+        
+    </div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>
+            <label>FIRST NAME</label>
+            <input type="text" formControlName="firstName"placeholder="Enter Your name">
+        </p>
+        <p>
+            <label>LAST NAME</label>
+            <input type="text" formControlName="lastName"placeholder="Enter Your Last name">
+        </p>
+        <p>
+            <label>EMAIL</label>
+            <input type="email" formControlName="emailid"placeholder="Enter Your Email">
+        </p>
+       
+            <div class="pass-btn">
+            <label>PASSWORD</label>
+            <p class="b4">
+            <input [type]="show ? 'text' : 'password'"placeholder="Password "required /> <i class="fa-solid fa-eye" id="eye"></i>
+           
+        </p>
+            <button (click)="password()"name="b4">{{show ? 'Show' : 'Hide'}}</button>
+           
+        </div>
+      
+        <hr>
+        <p>
+            
+            <button (click)="signUp()"><strong>Sign Up</strong></button>&nbsp;
+            
+       
+            
+            <button (click)="backTo()"><strong>back</strong></button>
+            
+        </p>
+        
+    </form>
+</section>
+</div>

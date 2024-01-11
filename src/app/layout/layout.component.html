@@ -1,0 +1,15 @@
+
+
+    <div class="slider">
+      <img id="img-1" [src]="images[0]" alt="Image 1" />
+      <img id="img-2" [src]="images[1]" alt="Image 2" />
+      <img id="img-3" [src]="images[2]" alt="Image 3" />
+    </div>
+    
+    <div class="navigation-button">
+      <span class="dot" [class.active]="currentSlide === 0" (click)="changeSlide(0)"></span>
+      <span class="dot" [class.active]="currentSlide === 1" (click)="changeSlide(1)"></span>
+      <span class="dot" [class.active]="currentSlide === 2" (click)="changeSlide(2)"></span>
+    </div>
+    
+    
